@@ -7,14 +7,73 @@
   color: black;
   text-shadow: 0px 0px 5px black;
 }
+
+.container-img {
+  position: relative;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container-img:hover .overlay {
+  opacity: 1;
+}
+@media(max-width: 767px){
+  .text-img {
+  color: #ffffff !important;
+  font-size: 9pt;  
+  }
+}
+.text-img {
+  color: #ffffff !important;
+  font-size: 10pt;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: justify;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 50px;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.img-thumbnail{
+  border: none !important;
+}
+
+.solucoes-titulos{
+  text-align: center;
+  color: #ffffff !important;
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 </style>
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bethany Bootstrap Theme</title>
+  <title>Ampla Consultoria Jr.</title>
   <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
   <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,300|Open+Sans:400,600,700,300' rel='stylesheet' type='text/css'>
@@ -22,12 +81,7 @@
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- =======================================================
-    Theme Name: Bethany
-    Theme URL: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/
-    Author: BootstrapMade.com
-    Author URL: https://bootstrapmade.com
-  ======================================================= -->
+
 </head>
 
 <body>
@@ -47,17 +101,15 @@
             <div class="collapse navbar-collapse navbar-right" id="mynavbar">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="#header">HOME</a></li>
-                <li><a href="#sobre">SOBRE NÓS</a></li>
+                <li><a href="#nos">QUEM SOMOS</a></li>
                 <li><a href="#solucoes">SOLUÇÕES</a></li>
-                <li><a href="#portfolio">CASES</a></li>
-                <li><a href="#trabalhe">TRABALHE CONOSCO</a></li>
+                <li><a href="#parceiros">NOSSO PARCEIROS</a></li>
                 <li><a href="#contact">CONTATO</a></li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
-
 
       <!--/ nav-->
       <div class="container text-center" style="height: 100px;">
@@ -77,97 +129,116 @@
 			</div>
 
 			<a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-			    <span class="icon-prev"></span>
-			</a>
-			<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-			    <span class="icon-next"></span>
-			</a>
-		</div>
+          <span class="icon-prev"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+          <span class="icon-next"></span>
+      </a>
+    </div>
   </header>
   <!--/ header-->
+  <section id="nos" class="section-padding wow fadeInUp delay-05s" >
+    <div class="container" style="margin-bottom: 20px; margin-top: 20px;" > 
+        <div class="col-md-12">
+          <h2 class="head-title text-center">Quem Somos</h2>
+          <br/>
+          <div style="text-align: justify; font-size: 18px">
+          <p>Somos a Ampla Consultoria Jr., uma empresa júnior veiculada ao Centro de Ensino
+          Superior de Juiz de Fora (CES/JF). Entregamos soluções personalizadas para nossos
+          clientes, desenvolvendo projetos de consultoria empresarial, desde 2015.</p>
+          <br/>
+          <p>Para garantir a qualidade dos projetos entregues, os consultores são orientados
+          por professores da instituição, especializados nas áreas dos serviços oferecidos pela
+          empresa. Além disso, somos altamente comprometidos com treinamento e capacitação, o
+          que resulta em reconhecimento e consolidação da Ampla Consultoria no mercado e no
+          Movimento Empresa Júnior.</p>
+          <br/>
+          <p><b>Missão:</b> Trabalhar no desenvolvimento de alunos, criando agentes de mudança
+          através da experiência e prática em gestão empresarial e da busca por soluções
+          personalizadas e acerssíveis para o mercado.</p>
+          <br/>
+          <p><b>Visão:</b> Consolidar a marca Ampla perante nossos steakeholders, no mercado de Juiz de Fora em 5 anos.</p>
+          <br/>
+          <p><b>Valores:</b> Empatia, Presença Ativa, Cooperação, Diversidade, Ampliar Horizontes.</p>
+        </div>
+         </div>
+       
+    </div>
+  </section>
    <!---->
-  <section id="" class="nopadding" >
+  <section id="solucoes" class="nopadding" >
     <div class="container "> 
         <div class="col-md-12">
-          <h2 class="head-title text-center">Nossos Trabalhos</h2>
+          <h2 class="head-title text-center">Soluções</h2>
         </div>
     </div>
     <div class="col-md-12" style="padding-bottom: 10px;">
         <div class="col-md-3" style="margin-top: 10px;">
-        	<img src="img/14.png" class="img-responsive" width="400px" height="500px">
+         <div class="container-img">
+            <img src="img/1.png" class="img-responsive image" width="400px" height="500px">
+            <div class="overlay text-img">
+              <div class="solucoes-titulos">Marketing</div>
+
+              A consultoria em marketing tem o objetivo de traçar estratégias de comunicação com o público-alvo da empresa, de modo a atraí-lo para os produtos ou serviços oferecidos. Nossa consultoria nessa área trabalha com o marketing digital, através das mídias sociais, e marketing off-line, buscando entender o público-alvo do cliente e definir as melhores ferramentas para atingi-lo.
+            </div>
+          </div>
         </div>
         <div class="col-md-3" style="margin-top: 10px;">
-          <img src="img/15.png" class="img-responsive " width="400px" height="500px">
+          <div class="container-img">
+            <img src="img/2.png" class="img-responsive image" width="400px" height="500px">
+            <div class="overlay text-img">
+              <div class="solucoes-titulos">Qualidade</div>
+                A atuação nessa área, pela Ampla Consultoria, visa facilitar a rotina de trabalho dos funcionários da empresa. Para isso, buscamos soluções para melhorar o ambiente de trabalho, tornando-o mais organizado e eficiente para execução das atividades. Além disso, trabalhamos com o mapeamento e padronização de processos, para garantir a manutenção da qualidade do produto final a ser entregue ao cliente.
+              </div>
+          </div>
         </div>
         <div class="col-md-3" style="margin-top: 10px;">
-          <img src="img/16.png" class="img-responsive" width="400px" height="500px">
+          <div class="container-img">
+            <img src="img/3.png" class="img-responsive image" width="400px" height="500px">
+            <div class="overlay text-img">
+              <div class="solucoes-titulos">Financeiro</div>
+              A Gestão Financeira busca entender a realidade da empresa através de um diagnóstico dos dados, para uma posterior análise tanto retrospectiva quanto de valores futuros e de potencial de crescimento. Atuamos para encontrar melhores soluções para organização das finanças, através de gráficos e controle de produção e vendas, de modo a reduzir os gastos. Além disso, apontamos as possibilidades de aperfeiçoamento dos processos decisórios, visando à maximização dos lucros.
+            </div>
+          </div>
         </div>
          <div class="col-md-3" style="margin-top: 10px;">
-          <img src="img/17.png" class="img-responsive" width="400px" height="500px">
+            <div class="container-img">
+              <img src="img/4.png" class="img-responsive image" width="400px" height="500px">
+              <div class="overlay text-img">
+                <div class="solucoes-titulos">Gestão</div>
+                 Trabalhamos com a consultoria em gestão em duas frentes: estratégia e melhoria contínua. Para empresas já consolidadas, fazemos análise da gestão e do modelo de negócios, visando identificar os pontos de melhoria para alavancar os resultados da empresa. Para novas empresas, trabalhamos com o planejamento estratégico, visando alcançar resultados satisfatórios e estabilidade do negócio. Para novos empreendedores, atuamos na consolidação de ideias e estruturação do modelo de negócio.
+               </div>            
+            </div>
         </div>
-    </div>
   </section>
-  <div class="container "> 
-        <div class="col-md-12">
-          <h2 class="head-title text-center">Nossos Clientes</h2>
-        </div>
-    	<div class="col-md-3 col" style="margin-top: 20px;">
-        	<img src="img/cliente1.png" class="img-thumbnail" width="100px" height="100px">
-        	<div col-md-12 style="margin-left: 20px">
-	        	<h5>Cliente</h5>
-       		</div>
-       	</div>
-       	<div class="col-md-3" style="margin-top: 10px;">
-        	<img src="img/cliente2.png" class="img-thumbnail" width="100px" height="100px">
-        	<div col-md-12 style="margin-left: 20px">
-	        	<h5>Cliente</h5>
-       		</div>
-       	</div>
-       	<div class="col-md-3" style="margin-top: 10px;">
-        	<img src="img/cliente1.png" class="img-thumbnail" width="100px" height="100px">
-        	<div col-md-12 style="margin-left: 20px">
-	        	<h5>Cliente</h5>
-       		</div>
-       	</div>
-       	<div class="col-md-3" style="margin-top: 10px;">
-        	<img src="img/cliente2.png" class="img-thumbnail" width="100px" height="100px">
-        	<div col-md-12 style="margin-left: 20px">
-	        	<h5>Cliente</h5>
-       		</div>
-       	</div>
-    </div>
-  <!---->
-  <section id="sobre" class="section-padding wow fadeInUp delay-05s" >
+  <section id="parceiros">
     <div class="container "> 
-        <div class="col-md-12">
-          <h2 class="head-title text-center">Sobre Nós</h2>
-          <p style="text-align: center; font-size: 18px">Empresa Júnior dos cursos de Administração, Comunicação Social, Marketing, Psicologia e Recursos Humanos do CES/JF.</p>
-        </div>
-        <div class="col-md-12 col-md-offset-1">
-	       	<div class="col-md-4" style="margin-top: 10px;">
-	        	<img src="img/pessoa1.png" class="img-circle" width="200px" height="200px">
-	        	<div col-md-12 style="margin-left: 20px">
-		        	<h3>Pedro Vieira</h3>
-		        	<p>Presidente</p>
-	       		</div>
-	       	</div>
-	       	<div class="col-md-4" style="margin-top: 10px;">
-	        	<img src="img/pessoa2.png" class="img-circle" width="200px" height="200px">
-	        	<div col-md-12 style="margin-left: 20px">
-		        	<h3>Amanda Toledo</h3>
-		        	<p>Diretora de Marketing</p>
-	       		</div>
-	       	</div>
-	       	<div class="col-md-4" style="margin-top: 10px;">
-	        	<img src="img/pessoa3.png" class="img-circle" width="200px" height="200px">
-	        	<div col-md-12 style="margin-left: 70px">
-		        	<h3>Nome</h3>
-		        	<p>Cargo</p>
-	       		</div>
-	       	</div>
-		</div>
-    </div>
-  </section>
+          <div class="col-md-12">
+            <h2 class="head-title text-center">Nossos Parceiros</h2>
+          </div>
+        <div class="col-md-3 col" style="margin-top: 20px;">
+            <img src="img/logo_liga.png" class="img-thumbnail" width="400px" height="500px">
+            <div col-md-12 style="margin-left: 20px">
+            </div>
+          </div>
+          <div class="col-md-3" style="margin-top: 10px;">
+            <img src="img/logo_solutech.png" class="img-thumbnail" width="400px" height="500px" style="margin-top: 15px;" >
+            <div col-md-12 style="margin-left: 20px">
+            </div>
+          </div>
+          <div class="col-md-3" style="margin-top: 10px;">
+            <img src="img/logo-amplajr.png" class="img-thumbnail" width="400px" height="500px">
+            <div col-md-12 style="margin-left: 20px">
+            </div>
+          </div>
+          <div class="col-md-3" style="margin-top: 10px;">
+            <img src="img/logo-faster.png" class="img-thumbnail" width="400px" height="500px">
+            <div col-md-12 style="margin-left: 20px">
+            </div>
+          </div>
+      </div>
+    </section>
+  <!---->
 
     <section class="section-padding parallax bg-image-2 section wow fadeIn delay-08s" id="cta-2">
     <div class="container">
@@ -182,92 +253,6 @@
       </div>
     </div>
   </section>
-  <!---->
-    <section id="solucoes" class="nopadding" >
-  	
-	    <div class="container"> 
-	        <div class="col-md-12">
-	          <h2 class="head-title text-center">Soluções</h2>
-	        </div>
-	        <div class="col-md-12">
-		       	<div class="col-md-6" style="margin-top: 10px;">
-		        	<img src="img/trabalhe1.png" class="img-responsive">
-		       	</div>
-		       	<div class="col-md-6" style="margin-top: 60px; float: right;">
-		        	<img src="img/trabalhe1.png" class="img-responsive">
-		       	</div>
-			</div>
-	    </div>
-		<br><br>
-	
-  </section>
-  <!---->
-<!---->
-
-  <!---->
-  <section class="section-padding wow fadeInUp delay-02s" id="portfolio">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-12">
-          <div class="section-title">
-            <h2 class="head-title">Cases</h2>
-          </div>
-        </div>
-        <div class="col-md-9 col-sm-12">
-          <div class="col-md-4 col-sm-6 padding-right-zero">
-            <div class="portfolio-box design">
-              <img src="img/8.png" alt="" class="img-responsive">
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 padding-right-zero">
-            <div class="portfolio-box design">
-              <img src="img/8.png" alt="" class="img-responsive">
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 padding-right-zero">
-            <div class="portfolio-box design">
-              <img src="img/8.png" alt="" class="img-responsive">
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 padding-right-zero">
-            <div class="portfolio-box design">
-              <img src="img/8.png" alt="" class="img-responsive">
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 padding-right-zero">
-            <div class="portfolio-box design">
-              <img src="img/8.png" alt="" class="img-responsive">
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 padding-right-zero">
-            <div class="portfolio-box design">
-              <img src="img/8.png" alt="" class="img-responsive">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!---->
-  <section id="trabalhe" class="section-padding" >
-  	<div class="back-color">
-	    <div class="container"> 
-	        <div class="col-md-12">
-	          <h2 class="head-title text-center" style="color: #fff">Trabalhe Conosco</h2>
-	        </div>
-	        <div class="col-md-12">
-		       	<div class="col-md-6" style="margin-top: 10px;">
-		        	<img src="img/trabalhe1.png" class="img-responsive">
-		       	</div>
-		       	<div class="col-md-6" style="margin-top: 60px; float: right;">
-		        	<img src="img/trabalhe1.png" class="img-responsive">
-		       	</div>
-			</div>
-	    </div>
-		<br><br>
-	</div>
-  </section>
-  <!---->
   <section class="section-padding wow fadeInUp delay-05s" id="contact">
     <div class="container">
       <div class="row white">
